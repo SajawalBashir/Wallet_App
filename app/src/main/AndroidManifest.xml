@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.recycler.walletapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WalletApp">
+        <activity android:name=".mvvm.ui.activities.UpdateExpenseActivity"/>
+        <activity android:name=".mvvm.ui.activities.AddExpenseActivity" />
+        <activity android:name=".mvvm.ui.activities.MainActivity" />
+        <activity android:name=".mvvm.ui.authentication.RegisterActivity" />
+        <activity
+            android:name=".mvvm.ui.authentication.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.WalletApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
